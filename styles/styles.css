@@ -1,0 +1,82 @@
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 2em;
+	max-height: 8em;
+}
+
+.navigation-logo {
+	max-width: 4em;
+	height: auto;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.navigation-list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 2em;
+
+	a {
+		/* color: #000; */
+		text-transform: uppercase;
+	}
+
+	a:hover {
+		color: #f00;
+	}
+}
+
+.landing {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 8em);
+
+	h1 {
+		font-size: 5em;
+		text-align: center;
+	}
+	h2 {
+		font-size: 2em;
+		text-align: center;
+	}
+}
+
+/* reusable styles  */
+.sub-header {
+	text-align: center;
+	font-size: 5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* styles for projects  */
+#projects {
+	display: flex;
+	justify-content: center;
+}
+
+/* styles for about section  */
+#about {
+	display: flex;
+	justify-content: center;
+}
+
+/* styles for contact section */
+#contact {
+	display: flex;
+	justify-content: center;
+}
+
+/* styles for footer */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4em;
+	/* background-color: #333; */
+}

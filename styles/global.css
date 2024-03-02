@@ -1,0 +1,65 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Set consistent font, typography, and base size */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #fff; /* Default text color */
+	background-color: #333; /* Default background color */
+}
+
+/* Remove list styles */
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+}
+
+/* Remove link underline */
+a {
+	text-decoration: none;
+}
+
+/* Set a base anchor color */
+a:link,
+a:visited {
+	color: #fff;
+}
+
+/* Remove border on images inside links */
+a img {
+	border: none;
+}
+
+/* Apply a natural box layout model to all elements */
+html {
+	box-sizing: border-box;
+}
+
+/* Remove default styling for headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: normal;
+	color: inherit; /* Inherits color from parent element */
+}
