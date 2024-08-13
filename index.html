@@ -3,44 +3,224 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles/global.css" />
 		<link rel="stylesheet" href="./styles/styles.css" />
-		<title>Edwin Peraza | Portfolio</title>
+		<title>Edwin Peraza | Portfolios</title>
 	</head>
-	<body>
-		<main id="home">
-			<nav class="main-navigation">
-				<a href="#home">
-					<img
-						src="https://avatars.githubusercontent.com/u/98931477?v=4"
-						alt="Logo of Edwin Peraza, click to navigate to home"
-						class="navigation-logo"
-					/>
-				</a>
-				<ul class="navigation-list">
-					<li><a href="#home">home</a></li>
-					<li><a href="#projects">projects</a></li>
-					<li><a href="#about">about</a></li>
-					<li><a href="#contact">contact</a></li>
+	<body id="start">
+		<header>
+			<nav class="navbar">
+				<div class="navbar-left">
+					<a href="#start" class="nav-link name">&lt;EdwinPeraza/&gt; </a>
+				</div>
+				<!-- hamburger menu -->
+				<div class="hamburger" onclick="toggleMenu()">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<!-- testing using icons instead of spans -->
+					<!-- <i class="fa-solid fa-bars"></i> -->
+				</div>
+				<ul class="navbar-right menu">
+					<li><a href="#projects" class="nav-link">Projects</a></li>
+					<li><a href="#about" class="nav-link">About</a></li>
+					<li><a href="#contact" class="nav-link">Contact</a></li>
 				</ul>
 			</nav>
-			<header class="landing">
-				<h1>Edwin Peraza</h1>
-				<h2>Full Stack Developer</h2>
-			</header>
-			<section id="projects">
-				<h2 class="sub-header">Projects</h2>
-				<div class="projects-container"></div>
+		</header>
+		<main>
+			<!-- beginning of landing page  -->
+			<section id="landing">
+				<div class="landing-container">
+					<h2>Hi, my name is</h2>
+					<h1>Edwin Peraza</h1>
+					<p>FULL-STACK WEB DEVELOPER</p>
+					<div class="scroll-icon">
+						<div class="oval">
+							<div class="ball"></div>
+						</div>
+					</div>
+				</div>
 			</section>
-			<section id="about">
-				<h2 class="sub-header">About</h2>
-			</section>
-			<section id="contact">
-				<h2 class="sub-header">Contact</h2>
+
+			<!-- beginning of projects page  -->
+			<section id="projects2">
+				<!-- button to scroll up  -->
+				<a href="#start" aria-label="scroll up">
+					<i class="fa-regular fa-circle-up" id="scroll-up"></i>
+				</a>
+				<h2 class="title"><a href="/projects.html">Projects</a></h2>
+				<div class="projects2-container">
+					<div class="project2-image first-project">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="/images/HIKKEN1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/HIKKEN2.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/RPS1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/RPS2.png" />
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="project2-description first-project">
+						<h3>HIKKEN</h3>
+						<p>
+							Introducing 'Hikken': a captivating web browser game meticulously
+							crafted with JavaScript, HTML, and CSS. This dynamic project
+							showcases an array of distinct characters and immersive scenarios,
+							offering players an engaging and interactive gaming experience.
+							Whether challenging the computer's cunning AI or competing against
+							a friend sharing the same keyboard, 'Hikken' brings the excitement
+							of multiplayer gameplay to your browser. This remarkable creation
+							stems from my dedication as a software engineering student,
+							conceived and developed as a standout achievement during my
+							software engineer class. 'Hikken' not only embodies my technical
+							skills but also represents my passion for crafting enjoyable and
+							innovative web-based entertainment.
+						</p>
+						<div class="project2-group-buttons">
+							<a
+								href="https://github.com/edwinperaza99/Hikken"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="project2-button"
+							>
+								Code
+							</a>
+							<a
+								href="https://edwinperaza99.github.io/Hikken/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="project2-button"
+							>
+								Demo
+							</a>
+						</div>
+					</div>
+
+					<div class="project2-description second-project">
+						<h3>ROCK-PAPER-SCISSORS</h3>
+						<p>
+							Presenting my second project: an engaging rock-paper-scissors game
+							skillfully brought to life using HTML, JavaScript, and the power
+							of Tailwind CSS. This project exemplifies a meticulous fusion of
+							frontend technologies, with a key emphasis on leveraging the
+							capabilities of Tailwind CSS to craft a visually appealing and
+							responsive website. The game itself offers a timeless challenge,
+							inviting players to test their strategic wits in the classic
+							rock-paper-scissors showdown. Through this project, I not only
+							honed my coding abilities but also delved deeper into the realm of
+							web design aesthetics. This venture showcases my dedication to
+							crafting functional and aesthetically pleasing web experiences,
+							while also highlighting the pivotal role of cutting-edge CSS
+							frameworks in achieving remarkable outcomes.
+						</p>
+						<div class="project2-group-buttons">
+							<a
+								href="https://github.com/edwinperaza99/cpsc349-project3"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="project2-button"
+							>
+								Code
+							</a>
+							<a
+								href="https://edwinperaza99.github.io/cpsc349-project3/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="project2-button"
+							>
+								Demo
+							</a>
+						</div>
+					</div>
+					<div class="project2-image second-project">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="/images/HIKKEN1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/HIKKEN2.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/RPS1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/RPS2.png" />
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+
+					<div class="project2-image third-project">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="/images/HIKKEN1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/HIKKEN2.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/RPS1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/RPS2.png" />
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="project2-description third-project">
+						<h3>PORTFOLIO WEBSITE</h3>
+						<p>
+							Welcome to my portfolio website, a living canvas that encapsulates
+							my voyage through the world of web development. This immersive
+							platform is meticulously crafted using Next.js and Tailwind CSS,
+							harmonizing innovation and aesthetics. Each facet of my learning
+							journey finds expression here, showcasing projects, skills, and
+							insights acquired along the way. This website isn't just a
+							showcase; it's a testament to my commitment to mastering modern
+							web development. Dive in, explore, and discover the synergy of
+							Next.js and Tailwind CSS as they propel my online narrative
+							forward, narrating the evolution of a passionate coder into a
+							proficient developer.
+						</p>
+						<div class="project2-group-buttons">
+							<a
+								href="https://github.com/edwinperaza99/personal-portfolio"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="project2-button"
+							>
+								Code
+							</a>
+							<a
+								href="/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="project2-button"
+							>
+								Demo
+							</a>
+						</div>
+					</div>
+				</div>
+				<p class="more-projects">Here you can find all my projects</p>
 			</section>
 		</main>
-		<footer>
-			<p>&copy; 2024 Edwin Peraza</p>
-		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="/js/lazy-loading.js"></script>
+		<script src="/js/index.js"></script>
+		<script src="/js/swiper.js"></script>
 	</body>
 </html>
