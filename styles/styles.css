@@ -161,13 +161,13 @@ header {
 }
 
 /* styles for projects section */
-#projects2 {
+#projects {
 	min-height: calc(100vh);
 	background: rgb(17, 206, 206);
 	padding-bottom: 3rem;
 }
 
-.projects2-container {
+.projects-container {
 	display: grid;
 	justify-content: center;
 	align-content: center;
@@ -177,7 +177,7 @@ header {
 	gap: 2.5rem;
 }
 
-.project2-description {
+.project-description {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -185,7 +185,7 @@ header {
 	font-size: 1em;
 }
 
-.project2-image {
+.project-image {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -205,7 +205,7 @@ header {
 	opacity: 1;
 }
 
-.project2-button {
+.project-button {
 	border: 2px solid white;
 	border-radius: 2em;
 	padding: 1em 2em;
@@ -216,13 +216,13 @@ header {
 	/* width: 200px; */
 }
 
-.project2-button:hover {
+.project-button:hover {
 	background: rgb(11, 192, 192);
 	border-color: darkcyan;
 	/* color: green; */
 }
 
-.project2-group-buttons {
+.project-group-buttons {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -230,28 +230,28 @@ header {
 }
 
 @media (max-width: 1000px) {
-	.projects2-container {
+	.projects-container {
 		grid-template-columns: repeat(1, 1fr);
 		gap: 0.5rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
-	.first-project.project2-description {
+	.first-project.project-description {
 		order: 1;
 	}
-	.first-project.project2-image {
+	.first-project.project-image {
 		order: 2;
 	}
-	.second-project.project2-description {
+	.second-project.project-description {
 		order: 3;
 	}
-	.second-project.project2-image {
+	.second-project.project-image {
 		order: 4;
 	}
-	.third-project.project2-description {
+	.third-project.project-description {
 		order: 5;
 	}
-	.third-project.project2-image {
+	.third-project.project-image {
 		order: 6;
 	}
 }
