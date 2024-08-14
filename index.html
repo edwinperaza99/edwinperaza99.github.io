@@ -8,6 +8,13 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<title>Edwin Peraza | Portfolios</title>
 	</head>
 	<body id="start">
@@ -53,21 +60,21 @@
 					<i class="fa-regular fa-circle-up" id="scroll-up"></i>
 				</a>
 				<h2 class="title"><a href="/projects.html">Projects</a></h2>
-				<div class="projects-container">
+				<article class="project-container">
 					<div class="project-image first-project">
 						<div class="swiper mySwiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<img src="/images/HIKKEN1.png" />
+									<img src="/images/hikken/HIKKEN-2.png" />
 								</div>
 								<div class="swiper-slide">
-									<img src="/images/HIKKEN2.png" />
+									<img src="/images/hikken/HIKKEN-1.png" />
 								</div>
 								<div class="swiper-slide">
-									<img src="/images/RPS1.png" />
+									<img src="/images/hikken/HIKKEN-5.png" />
 								</div>
 								<div class="swiper-slide">
-									<img src="/images/RPS2.png" />
+									<img src="/images/hikken/HIKKEN-4.png" />
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
@@ -76,18 +83,11 @@
 					<div class="project-description first-project">
 						<h3>HIKKEN</h3>
 						<p>
-							Introducing 'Hikken': a captivating web browser game meticulously
-							crafted with JavaScript, HTML, and CSS. This dynamic project
-							showcases an array of distinct characters and immersive scenarios,
-							offering players an engaging and interactive gaming experience.
-							Whether challenging the computer's cunning AI or competing against
-							a friend sharing the same keyboard, 'Hikken' brings the excitement
-							of multiplayer gameplay to your browser. This remarkable creation
-							stems from my dedication as a software engineering student,
-							conceived and developed as a standout achievement during my
-							software engineer class. 'Hikken' not only embodies my technical
-							skills but also represents my passion for crafting enjoyable and
-							innovative web-based entertainment.
+							This web browser game features unique characters and scenarios,
+							allowing players to challenge the computer's AI or compete in
+							multiplayer mode on the same keyboard. Developed during my
+							software engineering class, it showcases my passion for creating
+							enjoyable web-based entertainment.
 						</p>
 						<div class="project-group-buttons">
 							<a
@@ -108,23 +108,36 @@
 							</a>
 						</div>
 					</div>
-
+				</article>
+				<article class="project-container">
+					<div class="project-image second-project">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="/images/RPS/RPS-1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/RPS/RPS-2.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/RPS/RPS-3.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="/images/RPS/RPS-4.png" />
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
 					<div class="project-description second-project">
 						<h3>ROCK-PAPER-SCISSORS</h3>
 						<p>
-							Presenting my second project: an engaging rock-paper-scissors game
-							skillfully brought to life using HTML, JavaScript, and the power
-							of Tailwind CSS. This project exemplifies a meticulous fusion of
-							frontend technologies, with a key emphasis on leveraging the
-							capabilities of Tailwind CSS to craft a visually appealing and
-							responsive website. The game itself offers a timeless challenge,
-							inviting players to test their strategic wits in the classic
-							rock-paper-scissors showdown. Through this project, I not only
-							honed my coding abilities but also delved deeper into the realm of
-							web design aesthetics. This venture showcases my dedication to
-							crafting functional and aesthetically pleasing web experiences,
-							while also highlighting the pivotal role of cutting-edge CSS
-							frameworks in achieving remarkable outcomes.
+							This rock-paper-scissors game offers a classic challenge with a
+							visually appealing and responsive design. Developed using HTML,
+							JavaScript, and Tailwind CSS, it demonstrates my commitment to
+							creating functional and attractive web experiences. Through this
+							project, I deepened my understanding of web design and frontend
+							development.
 						</p>
 						<div class="project-group-buttons">
 							<a
@@ -145,26 +158,8 @@
 							</a>
 						</div>
 					</div>
-					<div class="project-image second-project">
-						<div class="swiper mySwiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img src="/images/HIKKEN1.png" />
-								</div>
-								<div class="swiper-slide">
-									<img src="/images/HIKKEN2.png" />
-								</div>
-								<div class="swiper-slide">
-									<img src="/images/RPS1.png" />
-								</div>
-								<div class="swiper-slide">
-									<img src="/images/RPS2.png" />
-								</div>
-							</div>
-							<div class="swiper-pagination"></div>
-						</div>
-					</div>
-
+				</article>
+				<article class="project-container">
 					<div class="project-image third-project">
 						<div class="swiper mySwiper">
 							<div class="swiper-wrapper">
@@ -185,19 +180,14 @@
 						</div>
 					</div>
 					<div class="project-description third-project">
-						<h3>PORTFOLIO WEBSITE</h3>
+						<h3>SOLO LEVEL</h3>
 						<p>
-							Welcome to my portfolio website, a living canvas that encapsulates
-							my voyage through the world of web development. This immersive
-							platform is meticulously crafted using Next.js and Tailwind CSS,
-							harmonizing innovation and aesthetics. Each facet of my learning
-							journey finds expression here, showcasing projects, skills, and
-							insights acquired along the way. This website isn't just a
-							showcase; it's a testament to my commitment to mastering modern
-							web development. Dive in, explore, and discover the synergy of
-							Next.js and Tailwind CSS as they propel my online narrative
-							forward, narrating the evolution of a passionate coder into a
-							proficient developer.
+							This self-improvement app encourages personal growth through a
+							gamified level system. Users set daily challenges and earn
+							experience points, promoting consistency and discipline in
+							achieving their goals. Inspired by the themes of progression in
+							the "Solo Leveling" series, this app reflects my passion for
+							combining motivation with technology.
 						</p>
 						<div class="project-group-buttons">
 							<a
@@ -218,10 +208,106 @@
 							</a>
 						</div>
 					</div>
-				</div>
+				</article>
+
 				<p class="more-projects">Here you can find all my projects</p>
 			</section>
+			<!-- beginning of about section  -->
+			<section id="about">
+				<h2 class="title">About</h2>
+				<div class="about-container">
+					<div class="information">
+						<h3>Who am I?</h3>
+						<p>
+							I am a software engineering student at California State
+							University, Fullerton. I am passionate about web development and I
+							am always looking to learn new technologies. I am currently
+							looking for an internship to gain more experience in the field.
+						</p>
+						<a
+							href="your-pdf-document.pdf"
+							target="_blank"
+							class="portfolio-button"
+							>Check my latest portfolio!</a
+						>
+					</div>
+					<div class="skills-container">
+						<h2 class="skills-title">Skills</h2>
+						<div class="skills">
+							<i class="fa-brands fa-react"></i>
+							<i class="fa-brands fa-js"></i>
+							<i class="fa-brands fa-css3-alt"></i>
+							<i class="fa-brands fa-html5"></i>
+							<!-- <i class="fa-brands fa-bootstrap"></i> -->
+							<i class="fa-brands fa-python"></i>
+							<i class="fa-brands fa-linux"></i>
+							<i class="fa-brands fa-figma"></i>
+							<!-- <i class="fa-brands fa-docker"></i> -->
+							<i class="fa-brands fa-git-alt"></i>
+							<i class="fa-brands fa-github"></i>
+							<i class="fa-solid fa-terminal"></i>
+							<!-- <i class="fa-brands fa-swift"></i> -->
+							<!-- <i class="fa-brands fa-rust"></i> -->
+							<!-- <i class="fa-brands fa-php"></i> -->
+							<i class="fa-brands fa-npm"></i>
+							<!-- <i class="fa-brands fa-mdb"></i> -->
+							<!-- <i class="fa-brands fa-golang"></i> -->
+							<i class="fa-brands fa-aws"></i>
+							<!-- <i class="fa-brands fa-angular"></i> -->
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer>
+			<div class="social-icons">
+				<a
+					href="https://github.com/edwinperaza99"
+					aria-label="GitHub"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<i class="fab fa-github"></i>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/edwin-peraza/"
+					aria-label="LinkedIn"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a
+					href="link-to-your-whatsapp-profile"
+					aria-label="WhatsApp"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<i class="fab fa-whatsapp"></i>
+				</a>
+				<!-- <a
+					href="link-to-your-discord-profile"
+					aria-label="Discord"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<i class="fab fa-discord"></i>
+				</a> -->
+				<!-- <a
+					href="link-to-your-whatsapp-profile"
+					aria-label="Figma"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<i class="fa-brands fa-figma"></i>
+				</a> -->
+				<!-- Add more social icons here -->
+			</div>
+			<p>
+				Copyright © <span id="copyright-year"></span> Edwin Peraza. All Rights
+				Reserved.
+			</p>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 		<script src="/js/lazy-loading.js"></script>
 		<script src="/js/index.js"></script>

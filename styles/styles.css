@@ -163,18 +163,38 @@ header {
 /* styles for projects section */
 #projects {
 	min-height: calc(100vh);
-	background: rgb(17, 206, 206);
+	/* background: rgb(17, 206, 206); */
+	background-image: radial-gradient(
+		circle,
+		rgba(95, 154, 154, 1) 0%,
+		rgba(4, 67, 68, 1) 100%
+	);
 	padding-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	gap: 2.5rem;
 }
 
-.projects-container {
+.project-container {
 	display: grid;
 	justify-content: center;
 	align-content: center;
 	grid-template-columns: repeat(2, 1fr);
-	padding-left: 5rem;
-	padding-right: 5rem;
+	padding: 3rem;
+	/* margin-left: 3rem; */
+	margin-left: 1rem;
+	margin-right: 1rem;
+	max-width: 1200px;
 	gap: 2.5rem;
+	/* styles for glass  */
+	background: rgba(255, 255, 255, 0.13);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.4px);
+	-webkit-backdrop-filter: blur(6.4px);
+	border: 1px solid rgba(255, 255, 255, 0.36);
 }
 
 .project-description {
