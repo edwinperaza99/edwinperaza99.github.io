@@ -327,13 +327,35 @@ header {
 } */
 
 .more-projects {
-	text-align: center;
-	padding-top: 3rem;
+	font-size: 3rem;
+	font-family: "Bungee", sans-serif;
+	/* text-align: center; */
+	/* padding-top: 3rem; */
+	color: transparent;
+	-webkit-text-stroke: 3px white;
+	cursor: pointer;
+	position: relative;
 }
 
-.more-projects:hover {
-	color: darkcyan;
+.more-projects::before {
+	content: "ALL PROJECTS";
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	overflow: hidden;
+	color: white;
+	border-right: 4px solid white;
+	transition: 1s ease-in-out;
 }
+
+.more-projects:hover::before {
+	width: 100%;
+	filter: drop-shadow(0 0 25px white);
+}
+
+/* .more-projects:hover {
+	color: darkcyan;
+} */
 
 /* styles for about section */
 #about {
