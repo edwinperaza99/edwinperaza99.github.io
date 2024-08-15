@@ -152,7 +152,7 @@ header {
 }
 
 #landing h1 {
-	font-size: 2.7rem;
+	font-size: 2.9rem;
 }
 
 #landing h2 {
@@ -160,7 +160,42 @@ header {
 }
 
 #landing p {
-	font-size: 1rem;
+	font-size: 2rem;
+}
+
+.quote-container {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.quote-text {
+	border: 1px solid white;
+	/* border-radius: 10px; */
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.13);
+	/* border-radius: 16px; */
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.4px);
+	-webkit-backdrop-filter: blur(6.4px);
+	border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.quote-author {
+	text-align: right;
+	/* border: 1px solid white; */
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	padding: 1rem;
+	margin: 0;
+	background: rgba(255, 255, 255, 0.13);
+	/* border-radius: 16px; */
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.4px);
+	-webkit-backdrop-filter: blur(6.4px);
+	border: 1px solid rgba(255, 255, 255, 0.36);
 }
 
 /* styles for projects section */
@@ -178,6 +213,10 @@ header {
 	/* justify-content: center; */
 	/* align-items: center; */
 	/* gap: 2.5rem; */
+	/* background-image: url("/images/backgrounds/low-poly-grid-haikei.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; */
 }
 
 .projects-container {
@@ -370,6 +409,15 @@ header {
 #about {
 	min-height: calc(100vh);
 	background: darkslategray;
+	background-image: radial-gradient(
+		circle,
+		rgba(95, 154, 154, 1) 0%,
+		rgba(4, 67, 68, 1) 100%
+	);
+	/* background-image: url("/images/backgrounds/low-poly-grid-haikei.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; */
 }
 
 .about-container {
@@ -403,32 +451,32 @@ header {
 	padding: 5rem;
 }
 
-.skills-container {
+/* .skills-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
 	padding: 5rem;
-}
+} */
 
-.skills {
+/* .skills {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	/* justify-content: center; */
-	align-items: center;
-	justify-items: center;
-	gap: 20px;
-	/* border: 1px solid darkblue; */
-	/* padding: 1rem;
+/* align-items: center; */
+/* justify-items: center; */
+/* gap: 20px; */
+/* border: 1px solid darkblue; */
+/* padding: 1rem;
 	margin: 1rem; */
-}
+/* } */
 
-.skills i {
+/* .skills i {
 	font-size: 2.5rem;
 	color: white;
 	padding: 0 2rem;
-}
+} */
 
 .portfolio-button {
 	display: block;
@@ -444,7 +492,7 @@ header {
 	/* color: green; */
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
 	.about-container {
 		flex-direction: column;
 	}
@@ -457,7 +505,7 @@ header {
 	.skills i {
 		font-size: 1rem;
 	}
-}
+} */
 /* styles for contact section */
 #contact {
 	/* min-height: calc(100vh); */
@@ -612,6 +660,70 @@ textarea {
 	}
 }
 
+/* styles for skills  */
+#skills {
+	min-height: calc(100vh);
+	background: darkslategray;
+	background-image: radial-gradient(
+		circle,
+		rgba(95, 154, 154, 1) 0%,
+		rgba(4, 67, 68, 1) 100%
+	);
+	/* background-image: url("/images/backgrounds/low-poly-grid-haikei.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; */
+}
+
+.skills-container {
+	padding-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	/* align-items: center; */
+	gap: 2.5rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+	justify-content: center;
+	align-content: center;
+	place-content: center;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 260px);
+	gap: 10px;
+	/* padding: 10px; */
+}
+
+.skill {
+	display: flex;
+	align-items: center;
+	color: white;
+	padding: 1rem;
+	gap: 1rem;
+
+	background: rgba(255, 255, 255, 0.13);
+	border-radius: 4px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.4px);
+	-webkit-backdrop-filter: blur(6.4px);
+	border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.skill.icon {
+	vertical-align: middle;
+	padding: 0.5em;
+	background: rgba(255, 255, 255, 0.13);
+	border-radius: 8px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.4px);
+	-webkit-backdrop-filter: blur(6.4px);
+	border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+/* TODO: might need to change this */
 /* styles for sections */
 section {
 	padding-top: 80px;
@@ -718,4 +830,9 @@ footer p {
 	60% {
 		transform: translateY(-4px);
 	}
+}
+
+canvas {
+	border: 2px solid #fff;
+	background-color: #000;
 }

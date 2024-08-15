@@ -21,7 +21,7 @@
 		<header>
 			<nav class="navbar">
 				<div class="navbar-left">
-					<a href="#start" class="nav-link name">&lt;EdwinPeraza/&gt; </a>
+					<a href="#start" class="nav-link name">&lt;ep/&gt; </a>
 				</div>
 				<!-- hamburger menu -->
 				<div class="hamburger" onclick="toggleMenu()">
@@ -42,14 +42,20 @@
 			<!-- beginning of landing page  -->
 			<section id="landing">
 				<div class="landing-container">
-					<h2>Hi, my name is</h2>
-					<h1>Edwin Peraza</h1>
+					<h1>Edwin Peraza,</h1>
 					<p>FULL-STACK WEB DEVELOPER</p>
-					<div class="scroll-icon">
+					<div class="quote-container">
+						<p class="quote-text">
+							"It's not about being the best; it's about being better than you
+							were yesterday."
+						</p>
+						<p class="quote-author">- Shoyo Hinata</p>
+					</div>
+					<!-- <div class="scroll-icon">
 						<div class="oval">
 							<div class="ball"></div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</section>
 
@@ -234,32 +240,78 @@
 								>Check my latest portfolio!</a
 							>
 						</div>
-						<div class="skills-container">
-							<h2 class="skills-title">Skills</h2>
-							<div class="skills">
-								<i class="fa-brands fa-react"></i>
-								<i class="fa-brands fa-js"></i>
-								<i class="fa-brands fa-css3-alt"></i>
-								<i class="fa-brands fa-html5"></i>
-								<!-- <i class="fa-brands fa-bootstrap"></i> -->
-								<i class="fa-brands fa-python"></i>
-								<i class="fa-brands fa-linux"></i>
-								<i class="fa-brands fa-figma"></i>
-								<!-- <i class="fa-brands fa-docker"></i> -->
-								<i class="fa-brands fa-git-alt"></i>
-								<i class="fa-brands fa-github"></i>
-								<i class="fa-solid fa-terminal"></i>
-								<!-- <i class="fa-brands fa-swift"></i> -->
-								<!-- <i class="fa-brands fa-rust"></i> -->
-								<!-- <i class="fa-brands fa-php"></i> -->
-								<i class="fa-brands fa-npm"></i>
-								<!-- <i class="fa-brands fa-mdb"></i> -->
-								<!-- <i class="fa-brands fa-golang"></i> -->
-								<i class="fa-brands fa-aws"></i>
-								<!-- <i class="fa-brands fa-angular"></i> -->
-							</div>
-						</div>
+						<canvas id="pong" width="800" height="600"></canvas>
 					</article>
+				</div>
+			</section>
+			<!-- beginning of skills section  -->
+			<section id="skills">
+				<div class="skills-container">
+					<h2 class="title">Skills</h2>
+					<h3 class="skills-subtitle">Programming Languages</h3>
+					<ul class="skills-grid">
+						<li class="skill">
+							<i class="fa-brands fa-react"></i><span>React</span>
+						</li>
+						<li class="skill">
+							<i class="fa-brands fa-react"></i><span>React</span>
+						</li>
+						<li class="skill">
+							<div class="icon">
+								<svg
+									width="24px"
+									height="24px"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g
+										id="SVGRepo_tracerCarrier"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></g>
+									<g id="SVGRepo_iconCarrier">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5C9.35329 14.5 10.6088 14.0871 11.6492 13.3799L6 6.57712V11.25C6 11.6642 5.66421 12 5.25 12C4.83579 12 4.5 11.6642 4.5 11.25V4.5C4.5 4.184 4.69807 3.9019 4.99529 3.79458C5.29251 3.68726 5.62511 3.77775 5.82699 4.02085L13.3008 13.0209C13.5622 13.3357 13.523 13.802 13.2127 14.0687C11.813 15.272 9.99057 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 8.76428 15.8926 9.50473 15.6916 10.2065C15.5936 10.5489 15.4733 10.8818 15.3325 11.2037C15.1665 11.5832 14.7243 11.7562 14.3448 11.5902C13.9653 11.4242 13.7922 10.982 13.9583 10.6025C14.0725 10.3413 14.1701 10.0712 14.2496 9.79351C14.4125 9.2247 14.5 8.6232 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5ZM10.5 3.75C10.9142 3.75 11.25 4.08579 11.25 4.5V7.5C11.25 7.91421 10.9142 8.25 10.5 8.25C10.0858 8.25 9.75 7.91421 9.75 7.5V4.5C9.75 4.08579 10.0858 3.75 10.5 3.75Z"
+											fill="#000000"
+										></path>
+									</g>
+								</svg>
+							</div>
+							<span>React</span>
+						</li>
+						<li class="skill">
+							<i class="fa-brands fa-react"></i><span>React</span>
+						</li>
+						<li class="skill">
+							<i class="fa-brands fa-react"></i><span>React</span>
+						</li>
+					</ul>
+					<div class="">
+						<i class="fa-brands fa-react"></i>
+						<i class="fa-brands fa-js"></i>
+						<i class="fa-brands fa-css3-alt"></i>
+						<i class="fa-brands fa-html5"></i>
+						<!-- <i class="fa-brands fa-bootstrap"></i> -->
+						<i class="fa-brands fa-python"></i>
+						<i class="fa-brands fa-linux"></i>
+						<i class="fa-brands fa-figma"></i>
+						<!-- <i class="fa-brands fa-docker"></i> -->
+						<i class="fa-brands fa-git-alt"></i>
+						<i class="fa-brands fa-github"></i>
+						<i class="fa-solid fa-terminal"></i>
+						<!-- <i class="fa-brands fa-swift"></i> -->
+						<!-- <i class="fa-brands fa-rust"></i> -->
+						<!-- <i class="fa-brands fa-php"></i> -->
+						<i class="fa-brands fa-npm"></i>
+						<!-- <i class="fa-brands fa-mdb"></i> -->
+						<!-- <i class="fa-brands fa-golang"></i> -->
+						<i class="fa-brands fa-aws"></i>
+						<!-- <i class="fa-brands fa-angular"></i> -->
+					</div>
 				</div>
 			</section>
 		</main>
@@ -316,5 +368,6 @@
 		<script src="/js/lazy-loading.js"></script>
 		<script src="/js/index.js"></script>
 		<script src="/js/swiper.js"></script>
+		<script src="/js/pong.js"></script>
 	</body>
 </html>
