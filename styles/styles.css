@@ -698,9 +698,21 @@ textarea {
 	justify-content: space-between;
 }
 
+@media (max-width: 600px) {
+	.skills-grid {
+		grid-template-columns: repeat(
+			2,
+			1fr
+		); /* Ensure at least 2 columns on small screens */
+	}
+}
+
 .skill {
 	display: flex;
 	align-items: center;
+	/* align items in the middle  */
+	justify-items: center;
+
 	color: white;
 	padding: 1rem;
 	gap: 1rem;
@@ -713,8 +725,10 @@ textarea {
 	border: 1px solid rgba(255, 255, 255, 0.36);
 }
 
-.skill.icon {
-	vertical-align: middle;
+.skill .icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 0.5em;
 	background: rgba(255, 255, 255, 0.13);
 	border-radius: 8px;
