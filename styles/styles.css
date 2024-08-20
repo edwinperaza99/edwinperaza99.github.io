@@ -148,7 +148,10 @@ header {
 }
 
 .landing-container {
-	padding-top: 280px;
+	padding: 260px 30px 5px 30px;
+
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #landing h1 {
@@ -180,6 +183,7 @@ header {
 	backdrop-filter: blur(6.4px);
 	-webkit-backdrop-filter: blur(6.4px);
 	border: 1px solid rgba(255, 255, 255, 0.36);
+	font-size: 0.9rem !important;
 }
 
 .quote-author {
@@ -196,6 +200,7 @@ header {
 	backdrop-filter: blur(6.4px);
 	-webkit-backdrop-filter: blur(6.4px);
 	border: 1px solid rgba(255, 255, 255, 0.36);
+	font-size: 0.8rem !important;
 }
 
 /* styles for projects section */
