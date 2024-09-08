@@ -130,6 +130,14 @@ header {
 	}
 }
 
+.gradient-background {
+	background-image: radial-gradient(
+		circle,
+		rgba(95, 154, 154, 1) 0%,
+		rgba(4, 67, 68, 1) 100%
+	);
+}
+
 /* styles for landing page */
 #landing {
 	/* background: darkslategray; */
@@ -206,29 +214,13 @@ header {
 /* styles for projects section */
 #projects {
 	min-height: calc(100vh);
-	/* background: rgb(17, 206, 206); */
-	background-image: radial-gradient(
-		circle,
-		rgba(95, 154, 154, 1) 0%,
-		rgba(4, 67, 68, 1) 100%
-	);
 	padding-bottom: 3rem;
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* justify-content: center; */
-	/* align-items: center; */
-	/* gap: 2.5rem; */
-	/* background-image: url("/images/backgrounds/low-poly-grid-haikei.svg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center; */
 }
 
 .projects-container {
 	padding-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 	gap: 2.5rem;
 	max-width: 1200px;
@@ -245,10 +237,6 @@ header {
 	align-content: center;
 	grid-template-columns: repeat(2, 1fr);
 	padding: 3rem;
-	/* margin-left: 3rem; */
-	/* margin-left: 1rem; */
-	/* margin-right: 1rem; */
-	/* max-width: 1200px; */
 	gap: 2.5rem;
 	/* styles for glass  */
 	background: rgba(255, 255, 255, 0.13);
@@ -291,20 +279,13 @@ header {
 	border: 2px solid white;
 	border-radius: 2em;
 	padding: 1em 3em;
-	/* background-color: dodgerblue; */
 	color: white;
 	cursor: pointer;
 	justify-self: center;
-	/* width: 200px; */
 }
 
 .project-button:hover {
-	/* background: rgb(11, 192, 192); */
-	/* border-color: darkcyan; */
-	/* color: green; */
-	/* From https://css.glass */
 	background: rgba(11, 192, 192, 0.51);
-	/* border-radius: 16px; */
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(7.2px);
 	-webkit-backdrop-filter: blur(7.2px);
@@ -323,15 +304,9 @@ header {
 		gap: 1rem;
 	}
 	.project-container {
-		/* grid-template-columns: repeat(1, 1fr); */
-		/* gap: 0.5rem; */
-		/* padding-left: 1rem; */
-		/* padding-right: 1rem; */
 		max-width: 100%;
 		display: flex;
 		flex-direction: column;
-		/* max-width: 90%; */
-		/* padding: 1rem; */
 		font-size: 0.8rem;
 	}
 	.project-group-buttons {
@@ -342,14 +317,6 @@ header {
 /* swiper styles test  */
 .swiper {
 	width: 90%;
-	/* height: 100%; */
-	/* padding: 0;
-	margin: 0; */
-	/* position: absolute;
-	left: 50%;
-	top: 50%; */
-	/* margin-left: -150px;
-	margin-top: -150px; */
 }
 
 .swiper-slide {
@@ -406,10 +373,6 @@ header {
 	filter: drop-shadow(0 0 25px white);
 }
 
-/* .more-projects:hover {
-	color: darkcyan;
-} */
-
 /* styles for about section */
 #about {
 	min-height: calc(100vh);
@@ -430,13 +393,9 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	/* padding: 1rem; */
 	gap: 2px;
-
-	/* padding-bottom: 3rem; */
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 	gap: 2.5rem;
 	max-width: 1200px;
@@ -451,37 +410,9 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: baseline;
-	/* justify-items: space-between; */
 	gap: 10px;
 	padding: 5rem;
 }
-
-/* .skills-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-	padding: 5rem;
-} */
-
-/* .skills {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	/* justify-content: center; */
-/* align-items: center; */
-/* justify-items: center; */
-/* gap: 20px; */
-/* border: 1px solid darkblue; */
-/* padding: 1rem;
-	margin: 1rem; */
-/* } */
-
-/* .skills i {
-	font-size: 2.5rem;
-	color: white;
-	padding: 0 2rem;
-} */
 
 .portfolio-button {
 	display: block;
@@ -497,20 +428,6 @@ header {
 	/* color: green; */
 }
 
-/* @media (max-width: 800px) {
-	.about-container {
-		flex-direction: column;
-	}
-	.information {
-		padding: 1rem;
-	}
-	.skills-container {
-		padding: 1rem;
-	}
-	.skills i {
-		font-size: 1rem;
-	}
-} */
 /* styles for contact section */
 #contact {
 	/* min-height: calc(100vh); */
@@ -528,7 +445,6 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	padding: 2rem 12rem;
-	/* margin: 1rem; */
 }
 
 .contact-container form {
@@ -548,7 +464,6 @@ header {
 .contact-container textarea {
 	grid-column: span 2;
 	min-width: 100%;
-	/* min-height: 100px; */
 	resize: vertical;
 	background-color: transparent;
 }
@@ -567,7 +482,6 @@ header {
 .form-button:hover {
 	background-color: rgb(5, 163, 163);
 	border-color: darkslategray;
-	/* color: green; */
 }
 
 /* style the inputs of the form  */
@@ -649,9 +563,6 @@ textarea {
 
 /* styles for titles */
 .title {
-	/* text-align: center; */
-	/* margin-left: 1rem; */
-	/* margin-right: 1rem; */
 	width: 100%;
 	max-width: 1200px;
 	font-size: 5rem;
@@ -668,30 +579,17 @@ textarea {
 /* styles for skills  */
 #skills {
 	min-height: calc(100vh);
-	background: darkslategray;
-	background-image: radial-gradient(
-		circle,
-		rgba(95, 154, 154, 1) 0%,
-		rgba(4, 67, 68, 1) 100%
-	);
-	/* background-image: url("/images/backgrounds/low-poly-grid-haikei.svg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center; */
+	padding-bottom: 40px;
 }
 
 .skills-container {
 	margin-bottom: 40rem;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
-	/* align-items: center; */
 	gap: 1rem;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 30px;
-	/* justify-content: center; */
-	/* align-content: center; */
 	place-content: center;
 }
 
@@ -699,16 +597,13 @@ textarea {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	gap: 10px;
-	/* padding: 10px; */
 	justify-content: space-between;
 }
 
 .skill {
 	display: flex;
 	align-items: center;
-	/* align items in the middle  */
 	justify-items: center;
-
 	color: white;
 	padding: 1rem;
 	gap: 1rem;
@@ -748,10 +643,10 @@ textarea {
 	}
 }
 /* TODO: might need to change this */
+/* it is being used for the navbar...  */
 /* styles for sections */
 section {
 	padding-top: 80px;
-	/* padding-bottom: 50px; */
 }
 
 /* styles for footer */
@@ -808,8 +703,6 @@ footer p {
 }
 
 .scroll-icon {
-	/* bottom: 20px;
-	right: 20px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
