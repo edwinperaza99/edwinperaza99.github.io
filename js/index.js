@@ -1,8 +1,10 @@
 const menu = document.querySelector(".menu");
+const hamburger = document.querySelector(".hamburger");
 
 // function to toggle menu
 function toggleMenu() {
 	menu.classList.toggle("active");
+	hamburger.classList.toggle("active");
 	// menu.classList.add("fa-x")
 	// menu.classList.remove("fa-bars")
 }
