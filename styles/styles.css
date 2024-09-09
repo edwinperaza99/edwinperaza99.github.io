@@ -2,6 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
+/* CSS color variables  */
+:root {
+	--primary-color: #5f9a9a;
+	--secondary-color: #044344;
+	--body-text: #e5e4e4;
+}
+
 /* Reset default margin and padding for all elements */
 * {
 	margin: 0;
@@ -40,13 +47,13 @@ h6 {
 }
 
 p {
-	/* color: white; */
-	/* off white */
-	color: #f5f5f5;
+	/* color: #f5f5f5; */
+	color: var(--body-text);
 }
+
 /* Basic link styles */
 a {
-	color: white;
+	/* color: white; */
 	text-decoration: none;
 }
 
@@ -157,7 +164,7 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: calc(100vh - 71.5px);
+	min-height: calc(100dvh - 71.5px);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -192,7 +199,12 @@ header {
 	font-size: 2rem;
 }
 
+.role {
+	color: var(--body-text);
+}
+
 .quote-container {
+	color: var(--body-text);
 	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
@@ -231,7 +243,7 @@ header {
 
 /* styles for projects section */
 #projects {
-	min-height: calc(100vh);
+	min-height: calc(100dvh);
 	padding-bottom: 3rem;
 }
 
@@ -393,33 +405,29 @@ header {
 
 /* styles for about section */
 #about {
-	min-height: calc(100vh);
-	background: darkslategray;
+	/* min-height: calc(100dvh); */
+	/* background: darkslategray;
 	background-image: radial-gradient(
 		circle,
 		rgba(95, 154, 154, 1) 0%,
 		rgba(4, 67, 68, 1) 100%
-	);
+	); */
 	/* background-image: url("/images/backgrounds/low-poly-grid-haikei.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center; */
+	padding-bottom: 2rem;
 }
 
 .about-container {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	gap: 2px;
-	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 	gap: 2.5rem;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 30px;
-	justify-content: center;
 	align-content: center;
 	place-content: center;
 }
@@ -428,27 +436,37 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: baseline;
-	gap: 10px;
-	padding: 5rem;
+	gap: 1rem;
+	/* padding: 5rem; */
+}
+
+.about-button-container {
+	display: flex;
+	/* justify-items: center; */
+	/* align-items: center; */
+	place-content: center;
 }
 
 .portfolio-button {
-	display: block;
-	border: 2px solid #ff9800;
-	border-radius: 3%;
-	padding: 1em;
-	align-self: first baseline;
+	/* display: block; */
+	border: 2px solid white;
+	border-radius: 2em;
+	padding: 1em 3em;
+	color: white;
+	cursor: pointer;
 }
 
 .portfolio-button:hover {
-	background-color: #0073e6;
-	border-color: #ff5722;
-	/* color: green; */
+	background: rgba(11, 192, 192, 0.51);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(7.2px);
+	-webkit-backdrop-filter: blur(7.2px);
+	border-color: rgb(205, 225, 225);
 }
 
 /* styles for contact section */
 #contact {
-	/* min-height: calc(100vh); */
+	/* min-height: calc(100dvh); */
 	background: darkcyan;
 }
 
@@ -596,7 +614,7 @@ textarea {
 
 /* styles for skills  */
 #skills {
-	min-height: calc(100vh);
+	min-height: calc(100dvh);
 	padding-bottom: 40px;
 }
 
