@@ -727,6 +727,7 @@ footer p {
 	z-index: 99;
 	opacity: 0;
 	transform: opacity 0.1s easy-in-out;
+	color: white;
 }
 
 #scroll-up:hover {
